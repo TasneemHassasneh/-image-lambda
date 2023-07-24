@@ -16,12 +16,4 @@ This AWS Lambda function is designed to be triggered when an image is uploaded t
    - Select the S3 bucket where you want to monitor image uploads.
    - Choose "All object create events."
    - Save the trigger.
-
-## Issues Encountered During Deployment
-During the deployment of this Lambda function, some common issues you may encounter include:
-- Permission issues: Ensure that the Lambda function's execution role has the necessary permissions to interact with S3 (GetObject, PutObject) and any other required services.
-- S3 bucket configuration: Make sure the S3 bucket where the images and `images.json` file are stored has the appropriate permissions set up (e.g., public read access if needed).
-- Image metadata extraction: Implement the logic to extract the correct metadata from the uploaded image based on your specific use case. Incorrect metadata extraction may lead to unexpected behavior.
-
-
-# -image-lambda
+     
